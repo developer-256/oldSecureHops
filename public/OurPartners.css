@@ -1,0 +1,33 @@
+#slide-container {
+  display: flex;
+  gap: 12vw;
+  width: calc(250px * 30);
+  animation: scroll 60s linear infinite;
+  overflow: hidden;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+/* Change Image on Hover */
+#outer {
+  position: relative;
+ }
+#outer Image,
+#inner Image {
+  width: 100%;
+}
+#inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#outer:hover #inner {
+  display: block;
+}
