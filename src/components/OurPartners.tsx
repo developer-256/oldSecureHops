@@ -1,4 +1,7 @@
-"use client";
+import { Inter } from "next/font/google";
+import localfont from "next/font/google";
+
+("use client");
 import React, { useState } from "react";
 import Image from "next/image";
 import "../../public/OurPartners.css";
@@ -27,7 +30,6 @@ const OurPartners = () => {
       <div
         className="mt-20x sm:mt-28 transition-transform ease-linear duration-700"
         style={{ transform: `translateX(-${curr * 30}%)` }}
-
       >
         <OurPartnersImages />
       </div>
